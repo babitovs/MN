@@ -8,7 +8,7 @@ def simpson3_8(f,a,b):
     h = (b-a) / 3
     x0 = a
     x1 = a + h
-    x2 = a+2+h
+    x2 = a+2*h
     x3 =b
     integral = (3* h / 8) * (f(x0) + 3 * f(x1) + 3 * f(x2) + f(x3))
     return integral
