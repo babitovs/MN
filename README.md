@@ -1,6 +1,8 @@
-como lo haces
-**como lo haces jajajjajajasja**
+En el siguiente Repo se mostrara el desarrollo de las 6 unidades de la Materia de Metodos Numericos:
+El contenido principal es las 6 unidaes vistas por el plan de estudios
+Cada unidad explicara sus metodos, tendra codigos de dichos metodos y casos de prueba de cada metodo
 
+Usted podra acceder as los problemarios en los siguientes links:
 ### Problemarios:
 
 * [Unidad 1: Documento de Drive](https://drive.google.com/file/d/1hkU41Ss2quZtRJRcbKP0robxbN_3qKiQ/view?usp=drive_link)
