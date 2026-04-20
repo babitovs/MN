@@ -27,9 +27,9 @@ def simpson13(f,a,b,n):
     integral = (h/3) * suma
     return integral
 
-funcion = lambda x: x**2
+funcion = lambda x: 100/(x**2 + 1)
 a = 0
-b = 1
+b = 2
 n = 4
 inicio = time.perf_counter()
 resultado= simpson13(funcion,a,b,n)

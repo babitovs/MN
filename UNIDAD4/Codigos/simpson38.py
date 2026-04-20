@@ -17,10 +17,11 @@ import math
 import time
 
 def funcion(x):
-    return math.sin(x)
+    return 5*x + 2*x**3
 
-a = 0
-b = math.pi
+a = 1
+b = 4
+n = 3
 inicio = time.perf_counter()
 resultado = simpson3_8(funcion,a,b)
 fin = time.perf_counter()

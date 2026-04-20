@@ -16,11 +16,11 @@ import math
 import time
 
 def funcion(x):
-    return x**2
+    return 10 / (x+1)
 
 a=0
-b=1
-n=100
+b=4
+n=4
 inicio = time.perf_counter()
 resultado = metodo_del_trapecio(funcion,a,b,n)
 fin = time.perf_counter()
