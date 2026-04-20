@@ -13,6 +13,7 @@ def metodo_del_trapecio(f,a,b,n):
     return integral
 
 import math
+import time
 
 def funcion(x):
     return x**2
@@ -20,6 +21,10 @@ def funcion(x):
 a=0
 b=1
 n=100
+inicio = time.perf_counter()
 resultado = metodo_del_trapecio(funcion,a,b,n)
-print(f"El resultado aproximado es: {resultado}")
+fin = time.perf_counter()
+tiempo_ejecucion = fin - inicio
 
+print(f"El resultado aproximado es: {resultado}")
+print(f"Tiempo de ejecución: {tiempo_ejecucion:.8f} segundos")

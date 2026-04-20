@@ -1,4 +1,5 @@
 import numpy as np
+import time
 
 def simpson13(f,a,b,n):
     """
@@ -30,5 +31,10 @@ funcion = lambda x: x**2
 a = 0
 b = 1
 n = 4
+inicio = time.perf_counter()
 resultado= simpson13(funcion,a,b,n)
+fin = time.perf_counter()
+
+tiempo_ejecucion = fin - inicio
 print(f"EL resultado de la integral : {resultado}")
+print(f"Tiempo de ejecución: {tiempo_ejecucion:.8f} segundos")
