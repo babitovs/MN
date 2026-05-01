@@ -17,4 +17,4 @@ resultado = diferencia_hacia_adelante(funcion, t, h)
 fin = time.perf_counter()
 tiempo_ejecucion = fin - inicio
 print(f"La aceleracion aproximada (hacia adelante) es: {resultado}")
-print(f"Tiempo de ejecución: {tiempo_ejecucion:.8f} segundos")
+print(f"Tiempo de ejecución: {tiempo_ejecucion:.8f} segundos")  

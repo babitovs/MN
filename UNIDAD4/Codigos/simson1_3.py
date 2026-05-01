@@ -27,7 +27,7 @@ def simpson13(f,a,b,n):
     integral = (h/3) * suma
     return integral
 
-funcion = lambda x: 100/(x**2 + 1)
+funcion = lambda x: 5*x**3 - 12*x**2 + 10*x + 5
 a = 0
 b = 2
 n = 4
