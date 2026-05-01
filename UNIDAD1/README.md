@@ -1,6 +1,6 @@
 
 
-
+![alt text](image.png)
 1. División por Cero en Métodos de Búsqueda de Raíces
 Este error se da en métodos abiertos como Newton-Raphson. Ocurre cuando la derivada de la función se vuelve cero (o muy cercana a cero), provocando una división por cero en la fórmula iterativa.
 
@@ -10,4 +10,4 @@ Este error se da en métodos abiertos como Newton-Raphson. Ocurre cuando la deri
 Este error sucede cuando una operación genera un número tan minúsculo que la computadora no puede representarlo y lo redondea a 0.0. Si ese valor luego se usa como divisor, causará una falla en el programa.
 
 4. Falla de la Propiedad Asociativa en Coma Flotante
-Demuestra que en programación, el orden en que se suman números de punto flotante de diferentes magnitudes altera el resultado. Sumar de una forma u otra provoca pérdidas de precisión.
+Demuestra que en programación, el orden en que se suman números de punto flotante de diferentes magnitudes altera el resultado. Sumar de una forma u otra provoca pérdidas de precisión.README.md
