@@ -1,5 +1,5 @@
 
-
+ERRORES:
 
 1. División por Cero en Métodos de Búsqueda de Raíces
 Este error se da en métodos abiertos como Newton-Raphson. Ocurre cuando la derivada de la función se vuelve cero (o muy cercana a cero), provocando una división por cero en la fórmula iterativa.
