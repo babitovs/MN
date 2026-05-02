@@ -36,4 +36,4 @@ A continuación, se presentan los scripts desarrollados para demostrar y calcula
 
 Aquí se encuentran los ejercicios prácticos resueltos a mano/documento sobre los temas de esta unidad:
 
-👉 [Clic aquí para ver el Problemario de la Unidad 1](https://drive.google.com/file/d/1hkU41Ss2quZtRJRcbKP0robxbN_3qKiQ/view?usp=drive_link) *(Sustituye el "#" por tu link de Drive/OneDrive)*
+👉 [Clic aquí para ver el Problemario de la Unidad 1](https://drive.google.com/file/d/1hkU41Ss2quZtRJRcbKP0robxbN_3qKiQ/view?usp=drive_link)
