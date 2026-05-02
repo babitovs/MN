@@ -7,7 +7,7 @@ En esta primera unidad se abordan los conceptos fundamentales de los métodos nu
 ## 🧠 Conceptos Teóricos: Tipos de Errores
 
 1. **División por Cero (Búsqueda de Raíces)**
-   Este error se da en métodos abiertos como Newton-Raphson. Ocurre cuando la derivada de la función se vuelve cero (o muy cercana a cero), provocando una división por cero en la fórmula iterativa.
+   Este error se da en métodos abiertos como Newton-Raphson. Ocurre cuando la derivada de la función se vuelve cero (o muy cercana a cero), provocando una división por cero en la fórmula iterativa. uwu
 
 2. **Error de Truncamiento (Ecuaciones Diferenciales)**
    Se ilustra clásicamente con el método de Euler. Si el tamaño del paso (`h`) al discretizar un proceso continuo es demasiado grande, el error se acumula iteración tras iteración, alejando la simulación del resultado real matemático.
