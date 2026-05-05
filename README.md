@@ -40,18 +40,30 @@ Aproximación de derivadas (diferencias finitas) y cálculo de áreas bajo la cu
 
 ---
 
-## 📝 Problemarios y Evidencias
+## 🛠️ Tecnologías Utilizadas
 
-Aquí se concentran los enlaces directos a las evidencias documentales y prácticas analíticas de cada unidad:
+- **Python**: Lenguaje principal utilizado para la implementación de todos los algoritmos matemáticos.
+- **Git & GitHub**: Control de versiones y alojamiento de este portafolio estudiantil.
+- **Markdown**: Para la estructuración y documentación de la teoría en los `README.md` de cada unidad.
 
-| Unidad | Estado | Enlace al Documento |
-| :---: | :--- | :--- |
-| **1** | Completado | 📄 [Ver Documento de Drive](https://drive.google.com/file/d/1hkU41Ss2quZtRJRcbKP0robxbN_3qKiQ/view?usp=drive_link) |
-| **2** | Completado | 📊 [Ver Hoja de Cálculo](https://docs.google.com/spreadsheets/d/1U-aCeb3EvohoChZQm3W79aWKl9u6HLWw/edit?usp=sharing&ouid=102675729823874484334&rtpof=true&sd=true) |
-| **3** | Completado | 📄 [Ver PDF de Problemario](https://drive.google.com/file/d/1QAKz5zaOGzR5Itj0MmPUoBxKQ__QZQ0_/view?usp=sharing) |
-| **4** | Completado | 📄 [Ver PDF de Problemario](https://drive.google.com/file/d/1Mc7tDKgipwPgc0xZjn1tuNDzN3_1NgIl/view?usp=sharing) |
-| **5** | Pendiente | *Próximamente* |
-| **6** | Pendiente | *Próximamente* |
+---
+
+## 🚀 Cómo ejecutar los códigos
+
+Si deseas clonar este repositorio para probar los métodos numéricos en tu entorno local:
+
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/babitovs/MN.git
+   ```
+2. **Navega a la carpeta de la unidad y luego a sus códigos:**
+   ```bash
+   cd MN/UNIDAD1/Codigos
+   ```
+3. **Ejecuta cualquier script de Python:**
+   ```bash
+   python nombre_del_script.py
+   ```
 
 ---
 <div align="center">
