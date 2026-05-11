@@ -1,11 +1,11 @@
 <div align="center">
-  <h1>🧮 Portafolio de Métodos Numéricos</h1>
+  <h1> Portafolio de Métodos Numéricos</h1>
   <p><i>Repositorio de prácticas, algoritmos y problemarios desarrollados a lo largo del curso.</i></p>
 </div>
 
 ---
 
-## 📖 Acerca de este Repositorio
+##  Acerca de este Repositorio
 
 Este repositorio funciona como un **portafolio integral** de la materia de **Métodos Numéricos**. Su propósito es documentar el aprendizaje teórico y práctico de las 6 unidades que componen el plan de estudios. 
 
@@ -16,31 +16,31 @@ En cada carpeta (unidad) podrás encontrar:
 
 ---
 
-## 🗂️ Estructura del Portafolio
+## Estructura del Portafolio
 
 El curso está dividido en 6 unidades. A continuación, el progreso y contenido de cada una:
 
-### ✅ [Unidad 1: Teoría de Errores y Fundamentos Numéricos](./UNIDAD1)
+###  [Unidad 1: Teoría de Errores y Fundamentos Numéricos](./UNIDAD1)
 Estudio de las limitaciones computacionales y los tipos de errores (truncamiento, división por cero, desbordamiento) al realizar aproximaciones matemáticas.
 
-### ✅ [Unidad 2: Métodos de Búsqueda de Raíces](./UNIDAD2)
+###  [Unidad 2: Métodos de Búsqueda de Raíces](./UNIDAD2)
 Resolución de ecuaciones algebraicas y trascendentes mediante métodos numéricos abiertos (Newton-Raphson, Secante) y cerrados (Bisección, Falsa Posición).
 
-### ✅ [Unidad 3: Sistemas de Ecuaciones Lineales](./UNIDAD3)
+###  [Unidad 3: Sistemas de Ecuaciones Lineales](./UNIDAD3)
 Aplicación del método exacto de Eliminación Gaussiana para encontrar las incógnitas en sistemas compatibles e incompatibles.
 
-### ✅ [Unidad 4: Diferenciación e Integración Numérica](./UNIDAD4)
+###  [Unidad 4: Diferenciación e Integración Numérica](./UNIDAD4)
 Aproximación de derivadas (diferencias finitas) y cálculo de áreas bajo la curva utilizando las reglas de integración de Newton-Cotes (Trapecio y Simpson).
 
-### 🚧 Unidad 5: *En progreso...*
+###  Unidad 5: *En progreso...*
 *Contenido de la unidad en desarrollo. Se añadirá la teoría, scripts y problemario conforme avance la clase.*
 
-### 🚧 Unidad 6: *En progreso...*
+###  Unidad 6: *En progreso...*
 *Contenido de la unidad en desarrollo. Se añadirá la teoría, scripts y problemario conforme avance la clase.*
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 - **Python**: Lenguaje principal utilizado para la implementación de todos los algoritmos matemáticos.
 - **Git & GitHub**: Control de versiones y alojamiento de este portafolio estudiantil.

@@ -6,28 +6,47 @@ En esta primera unidad se abordan los conceptos fundamentales de los métodos nu
 
 ## 🧠 Conceptos Teóricos: Tipos de Errores
 
-1. **División por Cero (Búsqueda de Raíces)**
-   Este error se da en métodos abiertos como Newton-Raphson. Ocurre cuando la derivada de la función se vuelve cero (o muy cercana a cero), provocando una división por cero en la fórmula iterativa. uwu
+### 1. División por Cero (Búsqueda de Raíces)
+Este error se da en métodos abiertos como Newton-Raphson. Ocurre cuando la derivada de la función se vuelve cero (o muy cercana a cero), provocando una división por cero en la fórmula iterativa.
 
-2. **Error de Truncamiento (Ecuaciones Diferenciales)**
-   Se ilustra clásicamente con el método de Euler. Si el tamaño del paso (`h`) al discretizar un proceso continuo es demasiado grande, el error se acumula iteración tras iteración, alejando la simulación del resultado real matemático.
+**Fórmula de iteración (Newton-Raphson):**
+$$ x_{i+1} = x_i - \frac{f(x_i)}{f'(x_i)} $$
+Si $f'(x_i) = 0$, la operación falla.
 
-3. **Subdesbordamiento Aritmético (Underflow)**
-   Este error sucede cuando una operación genera un número tan minúsculo que la computadora pierde la capacidad de representarlo y lo redondea a `0.0`. Si ese valor luego se usa como divisor, causará una falla fatal en la ejecución del programa.
-
-4. **Falla de la Propiedad Asociativa en Coma Flotante**
-   Demuestra que en programación, el orden en que se suman números de punto flotante de diferentes magnitudes altera el resultado. Sumar de una forma u otra provoca pérdidas significativas de precisión.
+**Código:** [`Div_por_0.py`](Codigos/Div_por_0.py)
 
 ---
 
-## 💻 Prácticas y Código (Python)
+### 2. Error de Truncamiento (Ecuaciones Diferenciales)
+Se ilustra clásicamente con métodos numéricos como Euler. Si el tamaño del paso ($h$) al discretizar un proceso continuo es demasiado grande, el error se acumula iteración tras iteración al truncar los términos de series de orden superior.
 
-A continuación, se presentan los scripts desarrollados para demostrar y calcular los errores mencionados, además de implementaciones adicionales:
+**Fórmula del método de Euler:**
+$$ y_{i+1} = y_i + f(x_i, y_i)h $$
 
-* 🐍 [`Div_por_0.py`](./Codigos/Div_por_0.py): Simulación del error de división por cero.
-* 🐍 [`Error_trunca.py`](./Codigos/Error_trunca.py): Demostración de acumulación de error por truncamiento.
-* 🐍 [`underflow.py`](./Codigos/underflow.py): Ejemplo de subdesbordamiento aritmético en la memoria.
-* 🐍 [`falla_asosiativa.py`](./Codigos/falla_asosiativa.py): Comprobación de la pérdida de precisión al alterar el orden de suma.
+**Código:** [`Error_trunca.py`](Codigos/Error_trunca.py)
+
+---
+
+### 3. Subdesbordamiento Aritmético (Underflow)
+Este error sucede cuando una operación genera un número tan minúsculo que la computadora pierde la capacidad de representarlo y lo redondea a `0.0`. Si ese valor luego se usa como divisor, causará una falla fatal en la ejecución del programa.
+
+**Código:** [`underflow.py`](Codigos/underflow.py)
+
+---
+
+### 4. Falla de la Propiedad Asociativa en Coma Flotante
+Demuestra que en programación, el orden en que se suman números de punto flotante de diferentes magnitudes altera el resultado. Sumar de una forma u otra provoca pérdidas significativas de precisión.
+
+**Demostración:**
+$$ (a + b) + c \neq a + (b + c) $$ 
+(en precisión finita de coma flotante).
+
+**Código:** [`falla_asosiativa.py`](Codigos/falla_asosiativa.py)
+
+---
+
+## 💻 Prácticas Adicionales (Python)
+
 * 🐍 [`cramer.py`](./Codigos/cramer.py): Implementación de la Regla de Cramer para resolución de sistemas.
 
 ---

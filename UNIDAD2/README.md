@@ -6,28 +6,43 @@ En esta segunda unidad nos enfocamos en la resolución de ecuaciones algebraicas
 
 ## 🧠 Conceptos Teóricos: Métodos Numéricos
 
-1. **Método de Bisección (Cerrado)**
-   Es un método robusto pero lento. Se basa en el teorema del valor intermedio, dividiendo repetidamente a la mitad un intervalo que contiene la raíz hasta acotar el error a una tolerancia deseada.
+### 1. Método de Bisección (Cerrado)
+Es un método robusto pero lento. Se basa en el teorema del valor intermedio, dividiendo repetidamente a la mitad un intervalo $[x_i, x_s]$ que contiene la raíz.
 
-2. **Método de la Falsa Posición / Regula Falsi (Cerrado)**
-   Similar a la bisección, pero en lugar de dividir el intervalo a la mitad, une los puntos extremos del intervalo con una línea recta y usa la intersección con el eje X como la nueva aproximación. Suele converger más rápido que la bisección.
+**Fórmula:**
+$$ x_r = \frac{x_i + x_s}{2} $$
 
-3. **Método de Newton-Raphson (Abierto)**
-   Uno de los métodos más rápidos y utilizados. A partir de una estimación inicial (un solo punto), utiliza la derivada de la función (la pendiente de la recta tangente) para proyectar una intersección en el eje X, acercándose rápidamente a la raíz. 
-
-4. **Método de la Secante (Abierto)**
-   Es una alternativa a Newton-Raphson que no requiere calcular la derivada analítica de la función (lo cual a veces es muy difícil). En su lugar, aproxima la derivada utilizando una línea secante que pasa por dos puntos iniciales.
+**Código:** [`Biseccion.py`](Codigos/Biseccion.py)
 
 ---
 
-## 💻 Prácticas y Código (Python)
+### 2. Método de la Falsa Posición / Regula Falsi (Cerrado)
+Similar a la bisección, pero une los puntos extremos del intervalo con una línea recta y usa la intersección con el eje X como la nueva aproximación. Converge más rápido que la bisección.
 
-A continuación, se presentan los scripts desarrollados para automatizar la búsqueda de raíces con cada uno de los métodos estudiados:
+**Fórmula:**
+$$ x_r = x_s - \frac{f(x_s)(x_i - x_s)}{f(x_i) - f(x_s)} $$
 
-* 🐍 [`Biseccion.py`](./Codigos/Biseccion.py): Implementación del método de Bisección buscando el cambio de signo.
-* 🐍 [`Falsa_posicion.py`](./Codigos/Falsa_posicion.py): Código para el método de la Falsa Posición.
-* 🐍 [`newton_r.py`](./Codigos/newton_r.py): Implementación de Newton-Raphson usando la función y su derivada.
-* 🐍 [`secante.py`](./Codigos/secante.py): Código del método de la Secante usando dos aproximaciones iniciales.
+**Código:** [`Falsa_posicion.py`](Codigos/Falsa_posicion.py)
+
+---
+
+### 3. Método de Newton-Raphson (Abierto)
+Uno de los métodos más rápidos y utilizados. A partir de una estimación inicial, utiliza la derivada de la función para proyectar una intersección en el eje X.
+
+**Fórmula:**
+$$ x_{i+1} = x_i - \frac{f(x_i)}{f'(x_i)} $$
+
+**Código:** [`newton_r.py`](Codigos/newton_r.py)
+
+---
+
+### 4. Método de la Secante (Abierto)
+Es una alternativa a Newton-Raphson que aproxima la derivada utilizando una línea secante que pasa por dos puntos iniciales, $x_{i-1}$ y $x_i$.
+
+**Fórmula:**
+$$ x_{i+1} = x_i - \frac{f(x_i)(x_{i-1} - x_i)}{f(x_{i-1}) - f(x_i)} $$
+
+**Código:** [`secante.py`](Codigos/secante.py)
 
 ---
 
@@ -35,4 +50,4 @@ A continuación, se presentan los scripts desarrollados para automatizar la bús
 
 Aquí se encuentran los ejercicios prácticos resueltos sobre la aplicación manual y comprobación de estos métodos:
 
-👉 [Clic aquí para ver el Problemario de la Unidad 2](https://docs.google.com/spreadsheets/d/1U-aCeb3EvohoChZQm3W79aWKl9u6HLWw/edit?usp=sharing&ouid=102675729823874484334&rtpof=true&sd=true) 
+👉 [Clic aquí para ver el Problemario de la Unidad 2](https://docs.google.com/spreadsheets/d/1U-aCeb3EvohoChZQm3W79aWKl9u6HLWw/edit?usp=sharing&ouid=102675729823874484334&rtpof=true&sd=true)
