@@ -12,7 +12,7 @@ Es un método robusto pero lento. Se basa en el teorema del valor intermedio, di
 **Fórmula:**
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?x_r%20%3D%20%5Cfrac%7Bx_i%20%2B%20x_s%7D%7B2%7D" alt="Bisección"/>
+  <img src="https://latex.codecogs.com/svg.latex?%5Ccolor%7Bwhite%7Dx_r%20%3D%20%5Cfrac%7Bx_i%20%2B%20x_s%7D%7B2%7D" alt="Bisección"/>
 </p>
 
 **Código:** [`Biseccion.py`](Codigos/Biseccion.py)
@@ -25,7 +25,7 @@ Similar a la bisección, pero une los puntos extremos del intervalo con una lín
 **Fórmula:**
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?x_r%20%3D%20x_s%20-%20%5Cfrac%7Bf(x_s)(x_i%20-%20x_s)%7D%7Bf(x_i)%20-%20f(x_s)%7D" alt="Falsa Posición"/>
+  <img src="https://latex.codecogs.com/svg.latex?%5Ccolor%7Bwhite%7Dx_r%20%3D%20x_s%20-%20%5Cfrac%7Bf(x_s)(x_i%20-%20x_s)%7D%7Bf(x_i)%20-%20f(x_s)%7D" alt="Falsa Posición"/>
 </p>
 
 **Código:** [`Falsa_posicion.py`](Codigos/Falsa_posicion.py)
@@ -38,7 +38,7 @@ Uno de los métodos más rápidos y utilizados. A partir de una estimación inic
 **Fórmula:**
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?x_{i%2B1}%20%3D%20x_i%20-%20%5Cfrac%7Bf(x_i)%7D%7Bf%27(x_i)%7D" alt="Newton-Raphson"/>
+  <img src="https://latex.codecogs.com/svg.latex?%5Ccolor%7Bwhite%7Dx_{i%2B1}%20%3D%20x_i%20-%20%5Cfrac%7Bf(x_i)%7D%7Bf%27(x_i)%7D" alt="Newton-Raphson"/>
 </p>
 
 **Código:** [`newton_r.py`](Codigos/newton_r.py)
@@ -51,7 +51,7 @@ Es una alternativa a Newton-Raphson que aproxima la derivada utilizando una lín
 **Fórmula:**
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?x_{i%2B1}%20%3D%20x_i%20-%20%5Cfrac%7Bf(x_i)(x_{i-1}%20-%20x_i)%7D%7Bf(x_{i-1})%20-%20f(x_i)%7D" alt="Secante"/>
+  <img src="https://latex.codecogs.com/svg.latex?%5Ccolor%7Bwhite%7Dx_{i%2B1}%20%3D%20x_i%20-%20%5Cfrac%7Bf(x_i)(x_{i-1}%20-%20x_i)%7D%7Bf(x_{i-1})%20-%20f(x_i)%7D" alt="Secante"/>
 </p>
 
 **Código:** [`secante.py`](Codigos/secante.py)

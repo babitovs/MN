@@ -12,7 +12,7 @@ Es un algoritmo fundamental en álgebra lineal para determinar las soluciones de
 **Fórmula de Sustitución hacia Atrás:**
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?x_i%20%3D%20%5Cfrac%7Bb_i%20-%20%5Csum_%7Bj%3Di%2B1%7D%5E%7Bn%7D%20a_%7Bij%7Dx_j%7D%7Ba_%7Bii%7D%7D" alt="Sustitución hacia atrás"/>
+  <img src="https://latex.codecogs.com/svg.latex?%5Ccolor%7Bwhite%7Dx_i%20%3D%20%5Cfrac%7Bb_i%20-%20%5Csum_%7Bj%3Di%2B1%7D%5E%7Bn%7D%20a_%7Bij%7Dx_j%7D%7Ba_%7Bii%7D%7D" alt="Sustitución hacia atrás"/>
 </p>
 
 **Código Base:** [`EliminacionGaussiana.py`](Codigos/EliminacionGaussiana.py)

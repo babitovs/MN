@@ -10,7 +10,7 @@ La interpolación lineal es el método más básico y consiste en unir dos punto
 Dados dos puntos **(x₀, y₀)** y **(x₁, y₁)**, el valor de **y** para un punto **x** intermedio se calcula como:
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?y%20%3D%20y_0%20%2B%20%5Cfrac%7By_1%20-%20y_0%7D%7Bx_1%20-%20x_0%7D%20(x%20-%20x_0)" alt="Interpolación Lineal"/>
+  <img src="https://latex.codecogs.com/svg.latex?%5Ccolor%7Bwhite%7Dy%20%3D%20y_0%20%2B%20%5Cfrac%7By_1%20-%20y_0%7D%7Bx_1%20-%20x_0%7D%20(x%20-%20x_0)" alt="Interpolación Lineal"/>
 </p>
 
 **Código:** [`interpolacion_lineal.py`](Codigos/interpolacion_lineal.py)
@@ -25,21 +25,21 @@ La interpolación cuadrática aproxima los datos utilizando un polinomio de grad
 El polinomio de interpolación de Lagrange de grado 2 está dado por:
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?y%20%3D%20y_0%20%5Ccdot%20L_0(x)%20%2B%20y_1%20%5Ccdot%20L_1(x)%20%2B%20y_2%20%5Ccdot%20L_2(x)" alt="Lagrange"/>
+  <img src="https://latex.codecogs.com/svg.latex?%5Ccolor%7Bwhite%7Dy%20%3D%20y_0%20%5Ccdot%20L_0(x)%20%2B%20y_1%20%5Ccdot%20L_1(x)%20%2B%20y_2%20%5Ccdot%20L_2(x)" alt="Lagrange"/>
 </p>
 
 Donde los polinomios base se calculan como:
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?L_0(x)%20%3D%20%5Cfrac%7B(x%20-%20x_1)(x%20-%20x_2)%7D%7B(x_0%20-%20x_1)(x_0%20-%20x_2)%7D" alt="L0"/>
+  <img src="https://latex.codecogs.com/svg.latex?%5Ccolor%7Bwhite%7DL_0(x)%20%3D%20%5Cfrac%7B(x%20-%20x_1)(x%20-%20x_2)%7D%7B(x_0%20-%20x_1)(x_0%20-%20x_2)%7D" alt="L0"/>
 </p>
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?L_1(x)%20%3D%20%5Cfrac%7B(x%20-%20x_0)(x%20-%20x_2)%7D%7B(x_1%20-%20x_0)(x_1%20-%20x_2)%7D" alt="L1"/>
+  <img src="https://latex.codecogs.com/svg.latex?%5Ccolor%7Bwhite%7DL_1(x)%20%3D%20%5Cfrac%7B(x%20-%20x_0)(x%20-%20x_2)%7D%7B(x_1%20-%20x_0)(x_1%20-%20x_2)%7D" alt="L1"/>
 </p>
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?L_2(x)%20%3D%20%5Cfrac%7B(x%20-%20x_0)(x%20-%20x_1)%7D%7B(x_2%20-%20x_0)(x_2%20-%20x_1)%7D" alt="L2"/>
+  <img src="https://latex.codecogs.com/svg.latex?%5Ccolor%7Bwhite%7DL_2(x)%20%3D%20%5Cfrac%7B(x%20-%20x_0)(x%20-%20x_1)%7D%7B(x_2%20-%20x_0)(x_2%20-%20x_1)%7D" alt="L2"/>
 </p>
 
 **Código:** [`interpolacion_cuadratica.py`](Codigos/interpolacion_cuadratica.py) (Incluye la resolución paso a paso de los ejercicios).
