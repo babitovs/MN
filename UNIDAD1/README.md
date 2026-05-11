@@ -10,18 +10,25 @@ En esta primera unidad se abordan los conceptos fundamentales de los métodos nu
 Este error se da en métodos abiertos como Newton-Raphson. Ocurre cuando la derivada de la función se vuelve cero (o muy cercana a cero), provocando una división por cero en la fórmula iterativa.
 
 **Fórmula de iteración (Newton-Raphson):**
-$$ x_{i+1} = x_i - \frac{f(x_i)}{f'(x_i)} $$
-Si $f'(x_i) = 0$, la operación falla.
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?x_{i%2B1}%20%3D%20x_i%20-%20%5Cfrac%7Bf(x_i)%7D%7Bf%27(x_i)%7D" alt="Newton-Raphson"/>
+</p>
+
+Si **f'(xᵢ) = 0**, la operación falla.
 
 **Código:** [`Div_por_0.py`](Codigos/Div_por_0.py)
 
 ---
 
 ### 2. Error de Truncamiento (Ecuaciones Diferenciales)
-Se ilustra clásicamente con métodos numéricos como Euler. Si el tamaño del paso ($h$) al discretizar un proceso continuo es demasiado grande, el error se acumula iteración tras iteración al truncar los términos de series de orden superior.
+Se ilustra clásicamente con métodos numéricos como Euler. Si el tamaño del paso (**h**) al discretizar un proceso continuo es demasiado grande, el error se acumula iteración tras iteración al truncar los términos de series de orden superior.
 
 **Fórmula del método de Euler:**
-$$ y_{i+1} = y_i + f(x_i, y_i)h $$
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?y_{i%2B1}%20%3D%20y_i%20%2B%20f(x_i%2C%20y_i)%20%5Ccdot%20h" alt="Euler"/>
+</p>
 
 **Código:** [`Error_trunca.py`](Codigos/Error_trunca.py)
 
@@ -38,7 +45,11 @@ Este error sucede cuando una operación genera un número tan minúsculo que la 
 Demuestra que en programación, el orden en que se suman números de punto flotante de diferentes magnitudes altera el resultado. Sumar de una forma u otra provoca pérdidas significativas de precisión.
 
 **Demostración:**
-$$ (a + b) + c \neq a + (b + c) $$ 
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?(a%20%2B%20b)%20%2B%20c%20%5Cneq%20a%20%2B%20(b%20%2B%20c)" alt="Asociativa"/>
+</p>
+
 (en precisión finita de coma flotante).
 
 **Código:** [`falla_asosiativa.py`](Codigos/falla_asosiativa.py)
