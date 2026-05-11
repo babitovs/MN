@@ -4,7 +4,7 @@ En esta cuarta unidad abordamos las técnicas para aproximar la derivada y la in
 
 ---
 
-## 🧠 Conceptos Teóricos: Diferenciación Numérica
+##  Conceptos Teóricos: Diferenciación Numérica
 
 Se basa en aproximar la pendiente (derivada) utilizando diferencias finitas.
 
@@ -53,7 +53,7 @@ Utilizan tres puntos de evaluación para minimizar aún más el error de truncam
 
 ---
 
-## 🧠 Conceptos Teóricos: Integración Numérica (Newton-Cotes)
+##  Conceptos Teóricos: Integración Numérica (Newton-Cotes)
 
 Métodos para aproximar el área bajo la curva de una función.
 
@@ -96,7 +96,7 @@ Utiliza polinomios de tercer grado (cúbicos). Se aplica típicamente cuando la 
 
 ---
 
-## 📝 Problemario de la Unidad
+##  Problemario de la Unidad
 
 Aquí se encuentran los ejercicios prácticos resueltos a mano o en documento:
 

@@ -48,7 +48,7 @@ Aproximación de derivadas (diferencias finitas) y cálculo de áreas bajo la cu
 
 ---
 
-## 🚀 Cómo ejecutar los códigos
+##  Cómo ejecutar los códigos
 
 Si deseas clonar este repositorio para probar los métodos numéricos en tu entorno local:
 

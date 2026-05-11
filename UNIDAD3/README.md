@@ -4,7 +4,7 @@ En esta tercera unidad abordamos la resolución de sistemas de ecuaciones lineal
 
 ---
 
-## 🧠 Conceptos Teóricos: Resolución de Sistemas Lineales
+##  Conceptos Teóricos: Resolución de Sistemas Lineales
 
 ### 1. Eliminación Gaussiana
 Es un algoritmo fundamental en álgebra lineal para determinar las soluciones de un sistema de ecuaciones lineales **Ax = b**. Consiste en aplicar operaciones elementales por filas para transformar la matriz aumentada en una matriz triangular superior, seguida de sustitución hacia atrás.
@@ -39,13 +39,13 @@ Se da cuando el sistema **no tiene solución** (ecuaciones contradictorias). Al 
 
 ---
 
-## 💻 Prácticas Adicionales (Python)
+##  Prácticas Adicionales (Python)
 
 * 🐍 [`gaussiana.py`](./Codigos/gaussiana.py) (y variaciones como `eliminacion_gaussiana.py`): Implementaciones y mejoras adicionales del método de eliminación.
 
 ---
 
-## 📝 Problemario de la Unidad
+##  Problemario de la Unidad
 
 Aquí se encuentran los ejercicios prácticos resueltos sobre la aplicación manual de este método en diversos sistemas de ecuaciones:
 

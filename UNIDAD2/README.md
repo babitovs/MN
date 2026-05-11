@@ -4,7 +4,7 @@ En esta segunda unidad nos enfocamos en la resolución de ecuaciones algebraicas
 
 ---
 
-## 🧠 Conceptos Teóricos: Métodos Numéricos
+##  Conceptos Teóricos: Métodos Numéricos
 
 ### 1. Método de Bisección (Cerrado)
 Es un método robusto pero lento. Se basa en el teorema del valor intermedio, dividiendo repetidamente a la mitad un intervalo [xᵢ, xₛ] que contiene la raíz.
@@ -58,8 +58,8 @@ Es una alternativa a Newton-Raphson que aproxima la derivada utilizando una lín
 
 ---
 
-## 📝 Problemario de la Unidad
+##  Problemario de la Unidad
 
 Aquí se encuentran los ejercicios prácticos resueltos sobre la aplicación manual y comprobación de estos métodos:
 
-👉 [Clic aquí para ver el Problemario de la Unidad 2](https://docs.google.com/spreadsheets/d/1U-aCeb3EvohoChZQm3W79aWKl9u6HLWw/edit?usp=sharing&ouid=102675729823874484334&rtpof=true&sd=true)
+ [Clic aquí para ver el Problemario de la Unidad 2](https://docs.google.com/spreadsheets/d/1U-aCeb3EvohoChZQm3W79aWKl9u6HLWw/edit?usp=sharing&ouid=102675729823874484334&rtpof=true&sd=true)
