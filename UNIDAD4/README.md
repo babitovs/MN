@@ -12,10 +12,16 @@ Se basa en aproximar la pendiente (derivada) utilizando diferencias finitas.
 Aproximan la derivada evaluando la función en el punto actual y un punto posterior o anterior.
 
 **Fórmula (Hacia Adelante):**
-$$ f'(x_i) \approx \frac{f(x_{i+1}) - f(x_i)}{h} $$
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?f%27(x_i)%20%5Capprox%20%5Cfrac%7Bf(x_%7Bi%2B1%7D)%20-%20f(x_i)%7D%7Bh%7D" alt="Hacia Adelante"/>
+</p>
 
 **Fórmula (Hacia Atrás):**
-$$ f'(x_i) \approx \frac{f(x_i) - f(x_{i-1})}{h} $$
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?f%27(x_i)%20%5Capprox%20%5Cfrac%7Bf(x_i)%20-%20f(x_%7Bi-1%7D)%7D%7Bh%7D" alt="Hacia Atrás"/>
+</p>
 
 **Códigos:** [`hacia_adelante.py`](Codigos/hacia_adelante.py), [`hacia_atras.py`](Codigos/hacia_atras.py)
 
@@ -25,7 +31,10 @@ $$ f'(x_i) \approx \frac{f(x_i) - f(x_{i-1})}{h} $$
 Equilibra el error utilizando un punto anterior y uno posterior para mayor precisión.
 
 **Fórmula:**
-$$ f'(x_i) \approx \frac{f(x_{i+1}) - f(x_{i-1})}{2h} $$
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?f%27(x_i)%20%5Capprox%20%5Cfrac%7Bf(x_%7Bi%2B1%7D)%20-%20f(x_%7Bi-1%7D)%7D%7B2h%7D" alt="Centrada"/>
+</p>
 
 **Código:** [`centrada.py`](Codigos/centrada.py)
 
@@ -34,8 +43,11 @@ $$ f'(x_i) \approx \frac{f(x_{i+1}) - f(x_{i-1})}{2h} $$
 ### 3. Fórmulas de 3 Puntos
 Utilizan tres puntos de evaluación para minimizar aún más el error de truncamiento.
 
-**Fórmulas (Adelante/Atrás 3 puntos):**
-$$ f'(x_i) \approx \frac{-3f(x_i) + 4f(x_{i+1}) - f(x_{i+2})}{2h} $$
+**Fórmula (3 Puntos Hacia Adelante):**
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?f%27(x_i)%20%5Capprox%20%5Cfrac%7B-3f(x_i)%20%2B%204f(x_%7Bi%2B1%7D)%20-%20f(x_%7Bi%2B2%7D)%7D%7B2h%7D" alt="3 Puntos"/>
+</p>
 
 **Código:** [`formula_3_puntos.py`](Codigos/formula_3_puntos.py)
 
@@ -49,7 +61,10 @@ Métodos para aproximar el área bajo la curva de una función.
 Aproxima el área bajo la curva uniendo los puntos con líneas rectas, formando trapecios. Es el más básico.
 
 **Fórmula:**
-$$ \int_a^b f(x) \, dx \approx (b - a) \frac{f(a) + f(b)}{2} $$
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?%5Cint_a%5Eb%20f(x)%20%5C%2C%20dx%20%5Capprox%20(b-a)%20%5Cfrac%7Bf(a)%20%2B%20f(b)%7D%7B2%7D" alt="Trapecio"/>
+</p>
 
 **Código:** [`trapecio.py`](Codigos/trapecio.py)
 
@@ -58,8 +73,11 @@ $$ \int_a^b f(x) \, dx \approx (b - a) \frac{f(a) + f(b)}{2} $$
 ### 5. Regla de Simpson 1/3
 Utiliza polinomios de segundo grado (parábolas) para conectar series de tres puntos. Altamente precisa, pero requiere un número par de intervalos.
 
-**Fórmula (para un intervalo simple de 3 puntos):**
-$$ \int_{x_0}^{x_2} f(x) \, dx \approx \frac{h}{3} [f(x_0) + 4f(x_1) + f(x_2)] $$
+**Fórmula:**
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?%5Cint_%7Bx_0%7D%5E%7Bx_2%7D%20f(x)%20%5C%2C%20dx%20%5Capprox%20%5Cfrac%7Bh%7D%7B3%7D%20%5Bf(x_0)%20%2B%204f(x_1)%20%2B%20f(x_2)%5D" alt="Simpson 1/3"/>
+</p>
 
 **Código:** [`simson1_3.py`](Codigos/simson1_3.py)
 
@@ -68,8 +86,11 @@ $$ \int_{x_0}^{x_2} f(x) \, dx \approx \frac{h}{3} [f(x_0) + 4f(x_1) + f(x_2)] $
 ### 6. Regla de Simpson 3/8
 Utiliza polinomios de tercer grado (cúbicos). Se aplica típicamente cuando la cantidad de segmentos evaluados es múltiplo de 3.
 
-**Fórmula (para un intervalo simple de 4 puntos):**
-$$ \int_{x_0}^{x_3} f(x) \, dx \approx \frac{3h}{8} [f(x_0) + 3f(x_1) + 3f(x_2) + f(x_3)] $$
+**Fórmula:**
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?%5Cint_%7Bx_0%7D%5E%7Bx_3%7D%20f(x)%20%5C%2C%20dx%20%5Capprox%20%5Cfrac%7B3h%7D%7B8%7D%20%5Bf(x_0)%20%2B%203f(x_1)%20%2B%203f(x_2)%20%2B%20f(x_3)%5D" alt="Simpson 3/8"/>
+</p>
 
 **Código:** [`simpson38.py`](Codigos/simpson38.py)
 

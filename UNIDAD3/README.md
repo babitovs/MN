@@ -7,10 +7,13 @@ En esta tercera unidad abordamos la resolución de sistemas de ecuaciones lineal
 ## 🧠 Conceptos Teóricos: Resolución de Sistemas Lineales
 
 ### 1. Eliminación Gaussiana
-Es un algoritmo fundamental en álgebra lineal para determinar las soluciones de un sistema de ecuaciones lineales $Ax = b$. Consiste en aplicar operaciones elementales por filas para transformar la matriz aumentada en una matriz triangular superior, seguida de sustitución hacia atrás.
+Es un algoritmo fundamental en álgebra lineal para determinar las soluciones de un sistema de ecuaciones lineales **Ax = b**. Consiste en aplicar operaciones elementales por filas para transformar la matriz aumentada en una matriz triangular superior, seguida de sustitución hacia atrás.
 
 **Fórmula de Sustitución hacia Atrás:**
-$$ x_i = \frac{b_i - \sum_{j=i+1}^{n} a_{ij}x_j}{a_{ii}} $$
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?x_i%20%3D%20%5Cfrac%7Bb_i%20-%20%5Csum_%7Bj%3Di%2B1%7D%5E%7Bn%7D%20a_%7Bij%7Dx_j%7D%7Ba_%7Bii%7D%7D" alt="Sustitución hacia atrás"/>
+</p>
 
 **Código Base:** [`EliminacionGaussiana.py`](Codigos/EliminacionGaussiana.py)
 **Ejemplo Paso a Paso:** [`EjemploGaussiana.py`](Codigos/EjemploGaussiana.py)
@@ -23,14 +26,14 @@ El sistema tiene una **única solución**. Geométricamente (en 2D), representa 
 ---
 
 ### 3. Sistema Compatible Indeterminado
-Ocurre cuando el sistema tiene **infinitas soluciones**. En el proceso de Gauss, una fila de la matriz aumentada se anula por completo ($0 = 0$), indicando que hay ecuaciones linealmente dependientes o redundantes.
+Ocurre cuando el sistema tiene **infinitas soluciones**. En el proceso de Gauss, una fila de la matriz aumentada se anula por completo (**0 = 0**), indicando que hay ecuaciones linealmente dependientes o redundantes.
 
 **Código:** [`sistema_indeterminado.py`](Codigos/sistema_indeterminado.py)
 
 ---
 
 ### 4. Sistema Incompatible
-Se da cuando el sistema **no tiene solución** (ecuaciones contradictorias). Al aplicar Gauss, se llega a una situación absurda (por ejemplo, $0 = c$, donde $c \neq 0$), lo que geométricamente significa líneas paralelas que nunca se cruzan.
+Se da cuando el sistema **no tiene solución** (ecuaciones contradictorias). Al aplicar Gauss, se llega a una situación absurda (por ejemplo, **0 = c**, donde **c ≠ 0**), lo que geométricamente significa líneas paralelas que nunca se cruzan.
 
 **Código:** [`sistema_incompatible.py`](Codigos/sistema_incompatible.py)
 
@@ -46,4 +49,4 @@ Se da cuando el sistema **no tiene solución** (ecuaciones contradictorias). Al 
 
 Aquí se encuentran los ejercicios prácticos resueltos sobre la aplicación manual de este método en diversos sistemas de ecuaciones:
 
-👉 [Enlace pendiente al Problemario de la Unidad 3](https://drive.google.com/file/d/1QAKz5zaOGzR5Itj0MmPUoBxKQ__QZQ0_/view?usp=sharing)
+👉 [Enlace al Problemario de la Unidad 3](https://drive.google.com/file/d/1QAKz5zaOGzR5Itj0MmPUoBxKQ__QZQ0_/view?usp=sharing)
