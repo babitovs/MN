@@ -252,7 +252,7 @@ Se observa que la precisión es notablemente mejor que Euler, aunque inferior a 
 
 ---
 
-## 📊 Comparación General de los Métodos
+##  Comparación General de los Métodos
 
 | Característica | Euler | Taylor Orden 2 | RK4 |
 |---|---|---|---|
