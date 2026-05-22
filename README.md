@@ -18,7 +18,7 @@ En cada carpeta (unidad) podrás encontrar:
 
 ## Estructura del Portafolio
 
-El curso está dividido en 6 unidades. A continuación, el progreso y contenido de cada una:
+El curso está dividido en 6 unidades. A continuación, el contenido de cada una:
 
 ###  [Unidad 1: Teoría de Errores y Fundamentos Numéricos](./UNIDAD1)
 Estudio de las limitaciones computacionales y los tipos de errores (truncamiento, división por cero, desbordamiento) al realizar aproximaciones matemáticas.
@@ -32,11 +32,11 @@ Aplicación del método exacto de Eliminación Gaussiana para encontrar las inc�
 ###  [Unidad 4: Diferenciación e Integración Numérica](./UNIDAD4)
 Aproximación de derivadas (diferencias finitas) y cálculo de áreas bajo la curva utilizando las reglas de integración de Newton-Cotes (Trapecio y Simpson).
 
-###  Unidad 5: *En progreso...*
-*Contenido de la unidad en desarrollo. Se añadirá la teoría, scripts y problemario conforme avance la clase.*
+###  [Unidad 5: Métodos de Interpolación](./UNIDAD5)
+Estimación de valores intermedios entre datos conocidos mediante interpolación lineal, cuadrática (Lagrange) y segmentada.
 
-###  Unidad 6: *En progreso...*
-*Contenido de la unidad en desarrollo. Se añadirá la teoría, scripts y problemario conforme avance la clase.*
+###  [Unidad 6: Solución de Ecuaciones Diferenciales Ordinarias](./UNIDAD6)
+Resolución numérica de EDOs de primer orden con condiciones iniciales usando los métodos de Euler, Runge-Kutta de orden 4 (RK4) y Serie de Taylor de orden 2.
 
 ---
 
