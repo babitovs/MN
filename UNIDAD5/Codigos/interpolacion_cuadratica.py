@@ -19,11 +19,11 @@ if __name__ == "__main__":
     print("="*60)
     
     # --- EJERCICIO 1 ---
-    print("\n--- EJERCICIO 1 ---")
-    x0, y0 = 1.0, 5.0
-    x1, y1 = 2.0, 12.0
-    x2, y2 = 3.0, 23.0
-    x_val = 2.5
+    print("\n--- EJERCICIO 3 JUEGOS ---")
+    x0, y0 = 20.0, 120.0
+    x1, y1 = 40.0, 95.0
+    x2, y2 = 60.0, 60.0
+    x_val = 50.0
     
     print(f"Datos dados:")
     print(f"(x0, y0) = ({x0}, {y0})")
@@ -64,4 +64,4 @@ if __name__ == "__main__":
     print(f"\nSustituyendo en la fórmula de Lagrange:")
     print(f"y = {y0_2}({l0_2:.4f}) + {y1_2}({l1_2:.4f}) + {y2_2}({l2_2:.4f})")
     print(f"y = {y_res_2:.4f}")
-    print(f"Resultado final aproximado: 35.8889")
+    print(f"Resultado final aproximado: 35.8889")    
