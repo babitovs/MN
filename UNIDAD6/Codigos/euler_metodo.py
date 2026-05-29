@@ -29,45 +29,67 @@ def euler(f, x0, y0, h, x_final):
 
 
 if __name__ == "__main__":
-    import math
     
-    print("=" * 65)
-    print("           MÉTODO DE EULER - Solución de EDOs")
-    print("=" * 65)
+    print("=" * 70)
+    print("       METODO DE EULER - Ley de Enfriamiento de Newton")
+    print("=" * 70)
     
     # ── Definir el problema ──
-    # EDO: dy/dx = -2y,  y(0) = 1
-    # Solución exacta: y(x) = e^(-2x)
+    # EDO: dT/dt = -0.1(T - 20)
+    # T(0) = 80 C  (temperatura inicial)
+    # Temperatura ambiente = 20 C
+    # h = 0.5 minutos
+    # Encontrar T(1.5)
     
-    def f(x, y):
-        return -2 * y
+    def f(t, T):
+        return -0.1 * (T - 20)
     
-    def solucion_exacta(x):
-        return math.exp(-2 * x)
+    t0 = 0
+    T0 = 80
+    h = 0.5
+    t_final = 1.5
     
-    x0 = 0
-    y0 = 1
-    h = 0.1
-    x_final = 1.0
-    
-    print(f"\nEDO: dy/dx = -2y")
-    print(f"Condición inicial: y({x0}) = {y0}")
-    print(f"Tamaño de paso h = {h}")
-    print(f"Intervalo: [{x0}, {x_final}]\n")
+    print(f"\nEDO: dT/dt = -0.1(T - 20)")
+    print(f"Condicion inicial: T({t0}) = {T0} C")
+    print(f"Temperatura ambiente: 20 C")
+    print(f"Tamano de paso: h = {h} min")
+    print(f"Evaluar hasta: t = {t_final} min\n")
     
     # ── Resolver ──
-    x_vals, y_vals = euler(f, x0, y0, h, x_final)
+    t_vals, T_vals = euler(f, t0, T0, h, t_final)
     
-    # ── Imprimir tabla de resultados ──
-    print(f"{'Paso':<6} {'x':<10} {'y (Euler)':<16} {'y (exacta)':<16} {'Error abs.':<14}")
-    print("-" * 62)
+    # ── Imprimir tabla de resultados con pendiente ──
+    print(f"{'Paso':<6} {'t_i':<10} {'T_i':<16} {'f(t_i,T_i)':<16}")
+    print("-" * 48)
     
-    for i in range(len(x_vals)):
-        y_exact = solucion_exacta(x_vals[i])
-        error = abs(y_vals[i] - y_exact)
-        print(f"{i:<6} {x_vals[i]:<10.4f} {y_vals[i]:<16.10f} {y_exact:<16.10f} {error:<14.10f}")
+    for i in range(len(t_vals)):
+        pendiente = f(t_vals[i], T_vals[i])
+        print(f"{i:<6} {t_vals[i]:<10.4f} {T_vals[i]:<16.6f} {pendiente:<16.6f}")
     
-    print("-" * 62)
-    print(f"\nValor aproximado final: y({x_final}) ~= {y_vals[-1]:.10f}")
-    print(f"Valor exacto:          y({x_final}) = {solucion_exacta(x_final):.10f}")
-    print(f"Error absoluto final:  {abs(y_vals[-1] - solucion_exacta(x_final)):.10f}")
+    print("-" * 48)
+    print(f"\nResultado: T({t_final}) = {T_vals[-1]:.6f} C")
+    
+    # ── Comparar con h mas pequeno ──
+    print("\n" + "=" * 70)
+    print("  COMPARACION: Ingresa un h mas pequeno para mejorar la precision")
+    print("=" * 70)
+    
+    try:
+        h_nuevo = float(input("\nIngresa el nuevo valor de h (ej: 0.1, 0.05): "))
+        
+        t_vals2, T_vals2 = euler(f, t0, T0, h_nuevo, t_final)
+        
+        print(f"\n--- Resultados con h = {h_nuevo} ---\n")
+        print(f"{'Paso':<6} {'t_i':<10} {'T_i':<16} {'f(t_i,T_i)':<16}")
+        print("-" * 48)
+        
+        for i in range(len(t_vals2)):
+            pendiente = f(t_vals2[i], T_vals2[i])
+            print(f"{i:<6} {t_vals2[i]:<10.4f} {T_vals2[i]:<16.6f} {pendiente:<16.6f}")
+        
+        print("-" * 48)
+        print(f"\nResultado con h = {h}: T({t_final}) = {T_vals[-1]:.6f} C")
+        print(f"Resultado con h = {h_nuevo}: T({t_final}) = {T_vals2[-1]:.6f} C")
+        print(f"Diferencia: {abs(T_vals[-1] - T_vals2[-1]):.6f} C")
+    except:
+        print("No se ingreso un valor. Fin del programa.")

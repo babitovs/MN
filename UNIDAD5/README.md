@@ -2,7 +2,7 @@
 
 En esta unidad exploramos distintos métodos numéricos para estimar valores intermedios entre datos conocidos, utilizando técnicas de interpolación polinómica y segmentada. A continuación se describe cada método implementado en la carpeta de `Codigos`.
 
-📄 **Documento de ejercicios resueltos:** [Ver en Google Docs](https://docs.google.com/document/d/1OUykytVh5udahDQJSPm-qPMdP2weHKTyNToLk5uTC9M/edit?usp=sharing)
+📄 **Problemario:** [Ver en Google Docs](https://docs.google.com/document/d/1OUykytVh5udahDQJSPm-qPMdP2weHKTyNToLk5uTC9M/edit?usp=sharing)
 
 ---
 
