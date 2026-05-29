@@ -2,6 +2,8 @@
 
 En esta sexta unidad abordamos los métodos numéricos para resolver ecuaciones diferenciales ordinarias (EDOs) de primer orden con condiciones iniciales. Se estudian tres enfoques fundamentales: el Método de Euler, el Método de Runge-Kutta de orden 4 (RK4) y la Serie de Taylor de orden 2, cada uno con diferente nivel de precisión y complejidad computacional.
 
+📄 **Documento de ejercicios resueltos:** [Ver en Google Docs](https://docs.google.com/document/d/1lAJiOekYKJGTKZc3jBedKOxqVlFyG8dfG4qKHUtQwt4/edit?usp=sharing)
+
 ---
 
 ## 📐 Conceptos Teóricos: Métodos para EDOs
