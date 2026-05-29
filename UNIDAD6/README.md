@@ -80,7 +80,9 @@ La solución analítica exacta es:
 | 1 | 0.1 | 0.8000 | 0.8187 | 0.0187 |
 | 2 | 0.2 | 0.6400 | 0.6703 | 0.0303 |
 
-**Código:** [`euler.py`](Codigos/euler.py)
+**Código (animación):** [`euler.py`](Codigos/euler.py)
+
+**Código (método puro):** [`euler_metodo.py`](Codigos/euler_metodo.py)
 
 ---
 
@@ -168,7 +170,9 @@ Resolvamos la misma EDO: **dy/dx = -2y**, con **y(0) = 1**, usando **h = 0.1**.
 
 Como se observa, RK4 reproduce la solución exacta con una precisión excepcional incluso con h = 0.1.
 
-**Código:** [`RK4.py`](Codigos/RK4.py)
+**Código (animación):** [`RK4.py`](Codigos/RK4.py)
+
+**Código (método puro):** [`RK4_metodo.py`](Codigos/RK4_metodo.py)
 
 ---
 
@@ -248,7 +252,9 @@ Para esta EDO: f(x, y) = -2y, y la derivada total es:
 
 Se observa que la precisión es notablemente mejor que Euler, aunque inferior a RK4.
 
-**Código:** [`taylor.py`](Codigos/taylor.py)
+**Código (animación):** [`taylor.py`](Codigos/taylor.py)
+
+**Código (método puro):** [`taylor_metodo.py`](Codigos/taylor_metodo.py)
 
 ---
 
